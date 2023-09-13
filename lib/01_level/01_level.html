@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Control: Level 01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="01_level-style.css">
+    <link rel="stylesheet" href="/lib/level-bg.css">
+    <script defer src="01_level-script.js"></script>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="content-container">
+            <div class="top-section">
+                <div class="container" id="score-container">
+                    <h3>Score:</h3>
+                    <h3 class="total-score">000</h3>
+                </div>
+                <div class="container" id="time-container">
+                    <h3>Time:</h3>
+                    <h3 class="time-countdown">120</h3>
+                </div>
+                <div class="container" id="coin-container">
+                    <h3>Coins:<h3>
+                    <h3 class="total-coins">000</h3>
+                </div>
+                <div class="container" id="lives-container ">
+                    <h3>Lives:</h3>
+                    <div class="container" id="heart-group">
+                        <div class="heart-container"><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
+                        <div class="heart-container"><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
+                        <div class="heart-container"><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
+                    </div>
+                </div>
+                <div class="settings"><img id="cog" src="/lib/references/cog_icon.png" alt=""></div>
+            </div>
+            <div class="left-section section-border">
+                
+            </div>
+            <div class="right-section section-border">
+                <div class="upgrade-container"  id="spray">
+                    <div class="upgrade-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Spray</p>
+                        <button class="upgrade-button" id="spray-button"><img class="coin-img" src="/lib/references/coin.png" alt="coin">Free</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="spray-2.0">
+                    <div class="upgrade-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Spray 2.0</p>
+                        <button class="upgrade-button" id="spray-2.0-button"><img class="coin-img" src="/lib/references/coin.png" alt="coin">25 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="hose">
+                    <div class="upgrade-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Hose</p>
+                        <button class="upgrade-button" id="hose-button"><img class="coin-img" src="/lib/references/coin.png" alt="coin">50 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="uv-light">
+                    <div class="upgrade-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">UV Light</p>
+                        <button class="upgrade-button" id="uv-light-button"><img class="coin-img" src="/lib/references/coin.png" alt="coin">100 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="flash-bomb">
+                    <div class="upgrade-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Flash Bomb</p>
+                        <button class="upgrade-button" id="flash-bomb-button"><img class="coin-img" src="/lib/references/coin.png" alt="coin">250 Coins</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

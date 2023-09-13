@@ -1,0 +1,12 @@
+.bg-container{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(references/game_BG.png);
+    background-color: black; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}

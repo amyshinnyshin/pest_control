@@ -38,13 +38,13 @@ h3 {
 #heart-group{
     display: flex;
     align-items: flex-start;
-    gap: 4px;
+    gap: 8px;
 }
 
 .heart {
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 
 #cog {
@@ -93,8 +93,17 @@ h3 {
     width: 96px;
     height: 96px;   
     border-radius: 8px;
-    background: #1A1A1A;
+    background: #2D2D2D;
+    display: flex;
+    align-items: flex-start;
 }
+
+.icon-image {
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+}
+
 .upgrade-copy {
     color: #FFF;
     text-align: center;
@@ -118,7 +127,7 @@ h3 {
     line-height: 24px;
 
     display: flex;
-    padding: 4px 12px;
+    padding: 6px 12px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -127,6 +136,90 @@ h3 {
 }
 
 .coin-img {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 }
+
+
+/* left section - game */
+.left-section {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-direction: column; 
+    position: relative;
+}
+.pest {
+    position: absolute;
+    top: 0;
+    /* visibility: hidden; */
+}
+.fly-row{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row;   
+    height: 64px;
+}
+.fly-container{
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.fly {
+    width: 64px;
+    height: 64px;
+}
+.cockroach-row{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row;   
+    height: 80px;
+    gap: 4px;
+}
+.cockroach {
+    width: 80px;
+    height: 80px;
+}
+.fly-coin-container {
+    width: 64px;
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.cockroach-coin-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.get-coin{
+    width: 40px;
+    height: 40px;
+}
+
+/* .row-1{
+    visibility: visible;
+}
+.row-2{
+    visibility: hidden;
+}
+.row-3{
+    visibility: hidden;
+}
+.row-4{
+    visibility: hidden;
+}
+.row-5{
+    visibility: hidden;
+}
+.row-6{
+    visibility: hidden;
+}
+.row-7{
+    visibility: hidden;
+} */

@@ -58,6 +58,9 @@ body {
     line-height: 80px;
 }
 
+.play-again{
+    text-align: center;
+}
 .selection-group{
     display: flex;
     flex-direction: column;

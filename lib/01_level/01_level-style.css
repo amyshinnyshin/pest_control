@@ -209,3 +209,128 @@ h3 {
 .no-show{
     display: none;
 }
+
+/* winning overlay... */
+/* .bg-container {
+    display: none;
+} */
+.winning-overlay-container{
+    display: none;
+}
+
+.winning-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 90%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Press Start 2P";
+}
+.lost-life-container{
+    display: none;
+}
+.lost-life-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 90%;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Press Start 2P";
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    flex-shrink: 0;
+}
+.title-group{
+    transform: translateX(16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    color: #FFC567;
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 56px;
+    line-height: 80px; 
+}
+
+.selection-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+}
+.try-again{
+    text-align: center;
+    font-family: "Press Start 2P";
+}
+.response-options{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.selected-icon{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 1px 2px;
+    justify-content: center;
+    align-items: center;
+}
+.selection-text{
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+#yes-winning-selected{
+    opacity: 0;
+}
+#no-winning-selected{
+    opacity: 0;
+}
+
+#yes-lost-selected{
+    opacity: 0;
+}
+#no-lost-selected{
+    opacity: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* lost life overlay... */
+

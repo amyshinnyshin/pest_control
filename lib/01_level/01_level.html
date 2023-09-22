@@ -31,9 +31,9 @@
                 <div class="container" id="lives-container ">
                     <h3>Lives:</h3>
                     <div class="container" id="heart-group">
-                        <img class="heart" src="/lib/references/heart.png" alt="heart-lives">
-                        <img class="heart" src="/lib/references/heart.png" alt="heart-lives">
-                        <img class="heart" src="/lib/references/heart.png" alt="heart-lives">
+                        <div><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
+                        <div><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
+                        <div><img class="heart" src="/lib/references/heart.png" alt="heart-lives"></div>
                     </div>
                 </div>
                 <div class="settings"><img id="cog" src="/lib/references/cog_icon.png" alt=""></div>
@@ -161,14 +161,50 @@
             </div>
         </div>
     </div>
-    <!-- <div class="winning-overlay">
-        
-    </div> -->
-    <!-- <div class="lost-life-overlay">
-        
-    </div> -->
-    <!-- <div class="lost-game-overlay">
-        
-    </div> -->
+    <div class="winning-overlay-container">
+        <div class="winning-overlay">
+            <div class="title-container">
+                <div class="title-group">
+                    You Win! 
+                </div>
+                <div class="selection-group">
+                    <div class="play-again">
+                        Play Again?
+                    </div>
+                    <div class="response-options">
+                        <div class="selection yes-winning">
+                            <img id="yes-winning-selected" class="selected-icon" src="/lib/references/play_icon.png" alt="selected-icon"><a class="selection-text" id="yes-winning-text" href="/lib/01_level/01_level.html">Yes</a>
+                        </div>
+                        <div class="selection no-winning">
+                            <img id="no-winning-selected" class="selected-icon" src="/lib/references/play_icon.png" alt="selected-icon"><a class="selection-text" id="no-winning-text" href="/lib/00_title.html">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="lost-life-container">
+        <div class="lost-life-overlay">
+            <div class="title-container">
+                <div class="title-group">
+                    You lost a life...
+                </div>
+                <div class="selection-group">
+                    <div class="try-again">
+                        Try Again?
+                    </div>
+                    <div class="response-options">
+                        <div class="selection yes-losing">
+                            <img id="yes-lost-selected" class="selected-icon" src="/lib/references/play_icon.png" alt="selected-icon"><a class="selection-text" id="yes-losing-text" href="">Yes</a>
+                        </div>
+                        <div class="selection no-losing">
+                            <img id="no-lost-selected" class="selected-icon" src="/lib/references/play_icon.png" alt="selected-icon"><a class="selection-text" id="no-losing-text" href="/lib/00_title.html">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
 </body>
 </html>

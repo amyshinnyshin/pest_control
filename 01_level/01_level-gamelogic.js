@@ -106,7 +106,7 @@ cockroachPoints.forEach((cockroach, index)=>{
     let clicks = 0
     cockroach.addEventListener("click", ()=>{
         if(clicks === 0){
-            cockroach.src = "/lib/references/half-cockroach.png"
+            cockroach.src = "/references/half-cockroach.png"
             const points = 1;
             updateScore(points);
             clicks++
@@ -236,7 +236,7 @@ function winLoseGameLogic (){
     }else if (hearts.length === 0){
         clearInterval(timerInterval);
         //lost the game overlay... /lib/game_end/game_end.html
-        window.location.href = "/lib/game_end/game_end.html";
+        window.location.href = "/game_end/game_end.html";
 
     }
     pests.style.top = initialPosition + "px";

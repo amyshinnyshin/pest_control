@@ -106,7 +106,7 @@ cockroachPoints.forEach((cockroach, index)=>{
     let clicks = 0
     cockroach.addEventListener("click", ()=>{
         if(clicks === 0){
-            cockroach.src = "../references/half-cockroach.png"
+            cockroach.src = "https://github.com/amyshinnyshin/pest_control/blob/3f14298e0117ae899ca33ef743b2e4e1ebc8bf14/references/half-cockroach.png"
             const points = 1;
             updateScore(points);
             clicks++

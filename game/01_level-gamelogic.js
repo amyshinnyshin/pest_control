@@ -163,17 +163,29 @@ function tryAgain () {
     initialPosition = -pestSectionHeight;
     movePestSection();
 
-    resetPestVisibility();
+    resetVisibility();
 }
 
-function resetPestVisibility() {
-    const allPests = document.querySelectorAll(".cockroach, .fly");
+// function resetPestVisibility() {
+//     const allPests = document.querySelectorAll(".cockroach, .fly");
 
-    allPests.forEach((pest) => {
-        pest.style.visibility = "visible";
+//     allPests.forEach((pest) => {
+//         pest.style.visibility = "visible";
+//     });
+// }
+
+function resetVisibility() {
+    flyPoints.forEach((fly)=>{
+        fly.style.visibility = "visible";
     });
+    getCoins.forEach((coins)=>{
+        coins.style.visibility = "visible";
+    });
+    cockroachPoints.forEach((cockroach)=>{
+        cockroach.style.visibility = "visible"
+        cockroach.src = "../references/cockroach.png"
+    })
 }
-
 
 const yesLostButTryAgain = document.querySelector(".yes-losing");
 

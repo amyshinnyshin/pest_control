@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Control: Level 01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="01_level-style.css">
+    <link rel="stylesheet" href="/level-bg.css">
+    <script defer src="01_level-script.js"></script>
+    <script defer src="01_level-gamelogic.js"></script>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="content-container">
+            <div class="top-section">
+                <div class="container" id="score-container">
+                    <h3>Score:</h3>
+                    <h3 class="total-score">000</h3>
+                </div>
+                <div class="container" id="time-container">
+                    <h3>Time:</h3>
+                    <h3 class="time-countdown">120</h3>
+                </div>
+                <div class="container" id="coin-container">
+                    <h3>Coins:<h3>
+                    <h3 class="total-coins">000</h3>
+                </div>
+                <div class="container" id="lives-container ">
+                    <h3>Lives:</h3>
+                    <div class="container" id="heart-group">
+                        <div><img class="heart" src="./references/heart.png" alt="heart-lives"></div>
+                        <div><img class="heart" src="./references/heart.png" alt="heart-lives"></div>
+                        <div><img class="heart" src="./references/heart.png" alt="heart-lives"></div>
+                    </div>
+                </div>
+                <div class="settings"><img id="cog" src="./references/cog_icon.png" alt=""></div>
+            </div>
+            <!-- Left Section (Game) -->
+            <div class="left-section section-border">
+                <div class="pest">
+                    <div class="cockroach-row row">
+                        <div class="cockroach-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div class="cockroach-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                    </div>
+                    <div class="cockroach-row row">
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div class="cockroach-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                    </div>
+                    <div class="cockroach-row row">
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div><img class="cockroach" src="./references/cockroach.png" alt="cockroach"></div>
+                        <div class="cockroach-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                    </div>
+                    <div class="fly-row row">
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div class="fly-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div class="fly-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                    </div>
+                    <div class="fly-row row">
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div class="fly-coin-container fly-coin"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div class="fly-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                    </div>
+                    <div class="fly-row row">
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                    </div>
+                    <div class="fly-row row">
+                        <div class="fly-coin-container"><img class="get-coin" src="./references/coin.png" alt="coin"></div>
+                        <div><img class="fly" src="/references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                        <div><img class="fly" src="./references/fly.png" alt="fly"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section (Upgrades) -->
+            <div class="right-section section-border">
+                <div class="upgrade-container"  id="spray">
+                    <div class="upgrade-icon"><img class="icon-image" src="./references/spray.png" alt="spray-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Spray</p>
+                        <button class="upgrade-button" id="spray-button">Free</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="aerosol">
+                    <div class="upgrade-icon"><img class="icon-image" src="./references/aerosol.png" alt="aerosol"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Aerosol</p>
+                        <button class="upgrade-button" id="aerosol-button"><img class="coin-img" src="./references/coin.png" alt="coin">25 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="vacuum">
+                    <div class="upgrade-icon"><img class="icon-image" src="./references/vacuum.png" alt="vacuum-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Vacuum</p>
+                        <button class="upgrade-button" id="vacuum-button"><img class="coin-img" src="./references/coin.png" alt="coin">50 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="ultralight">
+                    <div class="upgrade-icon"><img class="icon-image" src="./references/ultralight.png" alt="ultralight-icon"></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Ultralight</p>
+                        <button class="upgrade-button" id="uv-light-button"><img class="coin-img" src="./references/coin.png" alt="coin">100 Coins</button>
+                    </div>  
+                </div>
+                <div class="upgrade-container" id="flash-bomb">
+                    <div class="upgrade-icon"><img class="icon-image" src="./references/flashbomb.png" alt=""></div>
+                    <div class="upgrade-content">
+                        <p class="upgrade-copy">Flash Bomb</p>
+                        <button class="upgrade-button" id="flash-bomb-button"><img class="coin-img" src="./references/coin.png" alt="coin">250 Coins</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="winning-overlay-container">
+        <div class="winning-overlay">
+            <div class="title-container">
+                <div class="title-group">
+                    You Win! 
+                </div>
+                <div class="selection-group">
+                    <div class="play-again">
+                        Play Again?
+                    </div>
+                    <div class="response-options">
+                        <div class="selection yes-winning">
+                            <img id="yes-winning-selected" class="selected-icon" src="./references/play_icon.png" alt="selected-icon"><a class="selection-text" id="yes-winning-text" href="./01_level/01_level.html">Yes</a>
+                        </div>
+                        <div class="selection no-winning">
+                            <img id="no-winning-selected" class="selected-icon" src="./references/play_icon.png" alt="selected-icon"><a class="selection-text" id="no-winning-text" href="./index.html">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="lost-life-container">
+        <div class="lost-life-overlay">
+            <div class="title-container">
+                <div class="title-group">
+                    Pests have taken over the city...
+                </div>
+                <div class="selection-group">
+                    <div class="try-again">
+                        Try Again?
+                    </div>
+                    <div class="response-options">
+                        <div class="selection yes-losing">
+                            <img id="yes-lost-selected" class="selected-icon" src="./references/play_icon.png" alt="selected-icon"><a class="selection-text" id="yes-losing-text" href="">Yes</a>
+                        </div>
+                        <div class="selection no-losing">
+                            <img id="no-lost-selected" class="selected-icon" src="./references/play_icon.png" alt="selected-icon"><a class="selection-text" id="no-losing-text" href="./index.html">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</body>
+</html>

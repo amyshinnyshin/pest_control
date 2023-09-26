@@ -204,7 +204,7 @@ function removeHeart() {
         heartToRemove.style.visibility = "hidden";
         heartsRemaining--;
     }if (heartsRemaining === 0){
-        window.location.href = "/lib/game_end/game_end.html";
+        window.location.href = "./game_end.html";
     }
 }
 
